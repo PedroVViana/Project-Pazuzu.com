@@ -1,0 +1,189 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+@keyframes animacaoFundo { 
+    from {background-color: rgb(196, 195, 195)}
+    to {background-color: rgb(49, 14, 46);}
+}
+
+@keyframes animacaoFundoRodape {
+    from {background-color: rgb(196, 195, 195)}
+    to {background-color: rgb(10, 10, 10)}
+}
+
+@keyframes animacaoLogoOpacity {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+}
+
+@keyframes animacaoLogoTransicao {
+    from {opacity: 100%;}
+    to {opacity: 0%; transform: translateY(-260px); width: 40%; margin: 0 33%;}
+}
+
+body {
+    background-color: rgb(196, 195, 195);
+    animation-name: animacaoFundo;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+
+header {
+    background-color: rgb(196, 195, 195);
+    font-family: 'Eater', cursive;
+}
+
+#Logo {
+    width: 40%;
+    margin: 0% 33%;
+    text-align: center;
+    animation-name: animacaoLogoOpacity;
+    animation-duration: 20s;
+    animation-fill-mode: forwards;
+}
+
+
+#LogoAnimation {
+    position: absolute;
+    width: 60%;
+    margin-left: 23%;
+    margin-top: 12%;
+    animation-name: animacaoLogoTransicao;
+    animation-duration: 7s;
+    animation-fill-mode: forwards;
+    
+}
+
+#LogoAnimation:hover {
+    transform: scale(1.2);
+}
+
+#Logo:hover {
+    transform: scale(1.2);
+}
+
+#titulo {
+    position: absolute;
+	top: 50px;
+	right: 41%;
+	color: #3b0653;
+	font-size: 30px;
+}
+
+#titulo:hover {
+    transform: scale(1.2);
+}
+
+main {
+    font-family: 'Oswald', sans-serif;
+    color: rgb(196, 195, 195);
+    margin: 0 auto;
+    
+}
+
+main p {
+    font-size: 22px;
+    margin: 1% 5%;
+}
+
+main h1 {
+    font-size: 26px;
+    text-align: center;
+    font-style: italic;
+    padding: 1% 0;
+}
+
+.paises li {
+    display: inline-block;
+    text-align: center;
+    width: 25%;
+    vertical-align: top;
+    padding: 25px;
+    box-sizing: border-box;
+	border: 5px solid rgb(196, 195, 195);;
+	border-radius: 15px;
+}
+
+.paises li:hover {
+    transform: scale(1.1);
+    transform-style: flat;
+}
+
+.espaçamento {
+    margin-top: auto;
+    margin-bottom: 3%;
+    margin-left: 3%;
+}
+
+.espaçamentoJapão {
+    margin-top: auto;
+    margin-bottom: 3%;
+    margin-left: 9%;
+}
+
+#posição {
+    margin-left: 24%;
+}
+
+#posiçãoChina {
+    margin-left: 3%;
+}
+
+main h2 {
+    font-size: 25px;
+}
+
+nav a {
+	text-transform: uppercase;
+	color: rgb(196, 195, 195);;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+ }
+ nav a:hover {
+	 color: rgb(230, 23, 23);
+	 text-decoration: underline; 
+ }
+
+.paises li:hover {
+	border-color:rgb(230, 23, 23);
+}
+
+.paises li:active {
+	border-color:rgb(255, 60, 0);
+}
+
+#nome-paises {
+    text-align: center;
+}
+
+footer {
+	text-align: center;
+	background: rgb(10, 10, 10);
+	padding: 20px 0;
+    animation-name: animacaoFundoRodape;
+    animation-duration: 15s;
+    animation-fill-mode: forwards;
+}
+
+.Copyright {
+	color:rgb(255, 255, 255);
+	font-size: 8px;
+}
+
+#LogoBranca {
+    width: 7%;
+    margin: 0% 45%;
+}
+
+.Copyright:hover  {
+	color: rgb(247, 7, 7);
+	font-size: 10px;
+}
